@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Dev · 個人品牌</title>
-  <meta name="description" content="這是一個用來展示個人背景、技能樹、作品集與聯絡資訊的前端工程師個人品牌網站，提供清楚的自我介紹、技術能力與專案案例，協助訪客快速了解你的專業。">
+  <title>Frontend Dev · 個人品牌網站</title>
+  <meta name="description" content="這是一個展示個人背景、專業技能、作品集與聯絡方式的前端工程師個人品牌網站，內容清晰易讀，能讓訪客快速理解你的專業能力。">
 
   <style>
     /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -18,8 +18,8 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-      background-color: #0d1117; /* 深色背景 */
-      color: #e5e7eb; /* 淺灰白字 */
+      background-color: #0d1117;
+      color: #e5e7eb;
       line-height: 1.6;
     }
 
@@ -52,7 +52,6 @@
       text-decoration: underline;
     }
 
-    /* 導覽列 */
     .site-header {
       position: sticky;
       top: 0;
@@ -90,7 +89,6 @@
       color: #4ea8de;
     }
 
-    /* 區塊基底 */
     .section {
       padding: 4rem 0;
     }
@@ -169,6 +167,7 @@
     .section-contact a {
       color: #d1d5db;
     }
+
     .contact-links {
       margin-top: 1.2rem;
       display: flex;
@@ -178,16 +177,18 @@
     /* CSS:CONTACT-END */
 
     /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-       CSS:RWD（手機優先）
+       CSS:RWD
        ━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
     /* CSS:RWD-START */
     @media (min-width: 768px) {
       .section-title {
         font-size: 1.9rem;
       }
+
       .section-hero .hero-title {
         font-size: 2.4rem;
       }
+
       .about-grid,
       .projects-grid {
         display: grid;
@@ -208,7 +209,6 @@
 <body>
   <div class="page">
 
-    <!-- ========== Header 導覽列 ========== -->
     <header class="site-header">
       <div class="container nav">
         <div class="nav-left">Your Name · Frontend Dev</div>
@@ -222,18 +222,18 @@
       </div>
     </header>
 
-    <!-- ========== Main ========== -->
     <main>
 
       <!-- SECTION:HERO-START -->
       <section id="hero" class="section section-hero">
         <div class="container">
           <h1 class="hero-title">這裡是個人網站的 Hero 主視覺區（占位內容）</h1>
-          <p>此處將會放上未來的主視覺文字，例如一句話自我介紹、核心職稱（Frontend Developer）、行動呼籲等。</p>
-          <p>目前僅為占位內容，之後會用 Section SDD 的 Prompt 產生正式文案與版面，再把新的 section 程式碼整段貼在這兩個註解中間，完全取代這一區。</p>
+          <p>此處將放上主視覺文案，例如一句話自我介紹、核心職稱（Frontend Developer）、行動呼籲等。</p>
+          <p>之後會用 Section SDD 的 Prompt 產生正式文案。請將新的 section 程式碼完整貼在這兩個註解中間以取代本區。</p>
 
           <div class="hero-image">
-            <img src="https://source.unsplash.com/800x600/?developer,laptop" alt="在筆電前撰寫程式碼的前端開發者" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                 alt="在筆電前撰寫程式碼的前端開發者" loading="lazy">
           </div>
         </div>
       </section>
@@ -244,12 +244,13 @@
         <div class="container about-grid">
           <div>
             <h2 id="about-heading" class="section-title">關於我（占位內容）</h2>
-            <p>這裡目前是 About 區的占位內容，未來會用 Section SDD 產生完整的介紹內容。</p>
-            <p>請開發者將新的 section 程式碼「整段」貼在這兩個註解中間，完全取代現在的占位區塊。</p>
+            <p>這裡目前為 About 區的占位版本，用於說明個人背景、簡歷重點等。</p>
+            <p>未來請使用 Section SDD 產生正式內容，並將新的 section 程式碼完整貼在這兩個註解中間以覆蓋本區。</p>
           </div>
 
           <div>
-            <img src="https://source.unsplash.com/800x600/?workspace,developer" alt="開發者工作桌面與筆電示意圖" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+                 alt="開發者的桌面與筆電示意圖" loading="lazy">
           </div>
         </div>
       </section>
@@ -259,8 +260,8 @@
       <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
         <div class="container">
           <h2 id="skills-heading" class="section-title">技能（占位內容）</h2>
-          <p>此區將會列出你的前端技能與工具，目前為占位資訊。</p>
-          <p>未來會使用 Section SDD 的 Prompt 自動產生正式的技能區內容，請把生成的 section 完整貼回兩個註解之間以覆蓋本段。</p>
+          <p>此區將描述你的技能樹，例如 HTML、CSS、JavaScript、框架、工具等。</p>
+          <p>未來請使用 Section SDD 自動產生正式技能版面，並完整貼入兩註解中間取代本段。</p>
         </div>
       </section>
       <!-- SECTION:SKILLS-END -->
@@ -270,12 +271,13 @@
         <div class="container projects-grid">
           <div>
             <h2 id="projects-heading" class="section-title">作品集（占位內容）</h2>
-            <p>此區將會展示你的專案作品，目前顯示占位文字。</p>
-            <p>未來使用 Section SDD 產出的正式作品集版面，需將整個 section 程式碼完整貼入這兩個註解中間。</p>
+            <p>此為展示專案與案例的位置，目前僅為占位資訊。</p>
+            <p>正式作品集將由 Section SDD 產生，請完整貼入兩註解之間以替換本區。</p>
           </div>
 
           <div>
-            <img src="https://source.unsplash.com/800x600/?code,frontend" alt="前端程式碼畫面示意圖" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
+                 alt="展示前端程式碼畫面的示意圖片" loading="lazy">
           </div>
         </div>
       </section>
@@ -285,8 +287,8 @@
       <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
         <div class="container">
           <h2 id="contact-heading" class="section-title">聯絡我（占位內容）</h2>
-          <p>此區提供訪客聯絡你的方式，現在僅示意列出。</p>
-          <p>之後會用 Section SDD 產生正式版的聯絡資訊區塊，請將新 section 整段貼入兩個註解之間以完全替換。</p>
+          <p>此區將展示可供聯絡你的方式。</p>
+          <p>未來使用 Section SDD 產生正式聯絡區塊後，請將 section 完整貼在這兩個註解之間取代本段。</p>
 
           <div class="contact-links">
             <a href="mailto:hello@example.com">📧 Email：hello@example.com</a>
@@ -300,7 +302,6 @@
 
     </main>
 
-    <!-- ========== Footer ========== -->
     <footer class="section" style="text-align:center; padding:2rem 0; color:#6b7280; font-size:0.9rem;">
       © 2025 Your Name · Frontend Dev — All Rights Reserved.
     </footer>
